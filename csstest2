@@ -1,92 +1,99 @@
-/* <--------Even Question---------->    */
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="description About My Website">
+    <title>csstest2</title>
+</head>
+<body>
 
-/* 
-1. Mandatory labels first letter should be bold than other characters  */
+<!---------EVEN Question---------->
 
-.form1 p::first-letter{
-    font-weight: bold;
-}
+<div class="form1">
+    <h1><ins>Even Question</ins></h1>
+    <form ACTION="#" >
 
-/*
-2. Achieve using the HTML & make it in red '*' */
-
-.form1 span{
-    color: red;
-}
-
-/*
-3. Dropdown selected should have shadow  */
-
-.form1 select{
-    box-shadow: 3px 3px 15px rgb(19, 19, 19);
-}
-
-/*
-4. Dropdown values have alternate colours */
-
-.form1 option:nth-child(even){
-    background-color: whitesmoke;
-    color: gray;
-    font-weight: bold;
-}
-
-.form1 option:nth-child(odd){
-    background-color: aqua;
-    color: black;
-    font-weight: bold;
-}
-
-/*
-5. Checkbox selected should change the colour of the text in red */
-
-.form1 input[type="checkbox"]:checked+ label{
-    color: red;
-    font-weight: bold;
-}
-
-
-/* <-------------Odd Question--------------->     */
-
-
-/*
-1. Add (*) & make it in blue in CSS */
-
-.form2 label[class="required"]::after{
-    color: rgb(9, 9, 237);
-    content: '*';
-}
-
-/*
-2. Onclick make field border highlight  */
-
-.form2 input[required]:focus{
+    <fieldset>
+    <legend><b>Enquiry Form:-</b></legend>
     
-    color: rgb(9, 9, 9);
-    background-color: rgb(255, 255, 255);
-    border: 2.5px solid rgb(242, 46, 11);
-}
-
-.form2 input[name="city"]:focus{
+    <p>Name<span>*</span></p>
+    <input type="text" name="name" required placeholder="Enter Name"><br>
+    <p>Email<span>*</span></p>
+    <input type="email" name="email" required placeholder="Enter Email"><br><br>    
     
-    color: rgb(9, 9, 9);
-    background-color: rgb(255, 255, 255);
-    border: 2.5px solid rgb(230, 9, 238);
-}
+    <label>Course</label><br>
+    <select class="optinal">
+        <option>select</option>
+        <option>FullStack</option>
+        <option>FrontEnd</option>
+        <option>BackEnd</option>
+        <option>AWs</option>
+        </select> <BR><BR>
+    
+    <label>Preffered Location </label><br>
+    <select class="optional">
+        <option>select</option>
+        <option>Anna Nagar</option>
+        <option>Besant Nagar</option>
+        <option>Porur</option>
+        <option>OMR</option>
+        </select>
+    <br><br>
+        <input type="checkbox" checked="checked">
+        <label>Subscribe to newletter</label>
+        <br><br>
+        <input type="submit" value="submit">
+    
+    </fieldset>
+    
+    </form>
+    </div>
 
-/*
-3. Mouse hover when an mandatory label text green  */
 
-.form2 label[for]:hover{
-    color: green;
-    font-weight: bold;
-    font-size: 18px;
-}
+<!---------EVEN Question---------->
 
-/*
-4. Mouse hover when not an mandatory label text yellow  */
+    <div class="form2" style="margin-top:50px">
+        <h1><ins>Odd Question</ins></h1>
+        <form>
+            <fieldset>
+                <legend ><b>Validation Form:-</b></legend>
+                
+                   
+                    <label for="name2" class="required">Name</label>
+                    <input type="text" name="name2" required ><br><br>
+    
+                    <label for="name" class="required">DOB</label>
+                    <input type="date" name="dob" required ><br><br>
+    
+                    <label for="email2" class="required">Email</label>
+                    <input type="email" name="email2" required ><br><br>
+    
+                    <label for="number" class="required">Mobile No</label>
+                    <input type="number" name="number" required ><br><br>
+    
+                    <label for="city" class="label">City</label>
+                    <input type="text" name="city" ><br><br>
+    
+                    <input type="checkbox" name="checkbox">
+                    <label>Agree Trems & condition</label><br><br>
 
-.form2 label[for="city"]:hover{
-    color: yellow;
-    font-weight: bold;
-    font-size: 18px;
-}
+                    <input type="submit" value="submit">
+
+         
+            
+            </fieldset>
+        </form>
+
+
+
+    </div>
+
+
+</div>
+
+
+
+    
+</body>
+</html>
