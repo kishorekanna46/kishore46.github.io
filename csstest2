@@ -1,0 +1,92 @@
+/* <--------Even Question---------->    */
+
+/* 
+1. Mandatory labels first letter should be bold than other characters  */
+
+.form1 p::first-letter{
+    font-weight: bold;
+}
+
+/*
+2. Achieve using the HTML & make it in red '*' */
+
+.form1 span{
+    color: red;
+}
+
+/*
+3. Dropdown selected should have shadow  */
+
+.form1 select{
+    box-shadow: 3px 3px 15px rgb(19, 19, 19);
+}
+
+/*
+4. Dropdown values have alternate colours */
+
+.form1 option:nth-child(even){
+    background-color: whitesmoke;
+    color: gray;
+    font-weight: bold;
+}
+
+.form1 option:nth-child(odd){
+    background-color: aqua;
+    color: black;
+    font-weight: bold;
+}
+
+/*
+5. Checkbox selected should change the colour of the text in red */
+
+.form1 input[type="checkbox"]:checked+ label{
+    color: red;
+    font-weight: bold;
+}
+
+
+/* <-------------Odd Question--------------->     */
+
+
+/*
+1. Add (*) & make it in blue in CSS */
+
+.form2 label[class="required"]::after{
+    color: rgb(9, 9, 237);
+    content: '*';
+}
+
+/*
+2. Onclick make field border highlight  */
+
+.form2 input[required]:focus{
+    
+    color: rgb(9, 9, 9);
+    background-color: rgb(255, 255, 255);
+    border: 2.5px solid rgb(242, 46, 11);
+}
+
+.form2 input[name="city"]:focus{
+    
+    color: rgb(9, 9, 9);
+    background-color: rgb(255, 255, 255);
+    border: 2.5px solid rgb(230, 9, 238);
+}
+
+/*
+3. Mouse hover when an mandatory label text green  */
+
+.form2 label[for]:hover{
+    color: green;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/*
+4. Mouse hover when not an mandatory label text yellow  */
+
+.form2 label[for="city"]:hover{
+    color: yellow;
+    font-weight: bold;
+    font-size: 18px;
+}
